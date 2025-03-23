@@ -5,9 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-10/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer and promise generator</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-f7c0Fsc1.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-ScMiTk-O.css">
   </head>
-  <body>
+  <body class="hero-page">
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -31,89 +33,84 @@
     <main>
       <div class="container">
         <h1 class="main-title">
-          <span class="main-title-gradient">why DED? because:</span>
-          <span class="main-title-gradient">Dominate the future</span>
-          <span class="main-title-gradient">Efficiently code</span>
-          <span class="main-title-gradient">Deploy smart</span>
+          <span class="main-title-gradient-grey">why DED...? because:</span>
+          <span class="main-title-gradient-grey">Dominate the future,</span>
+          <span class="main-title-gradient-grey">code Efficiently,</span>
+          <span class="main-title-gradient-grey">Deploy smartly</span>
         </h1>
       </div>
       <!-- Loads the specified .html file -->
-      <article class="badges">
-        <div class="container">
-          <ul class="badges-list">
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/vite-plugin-html-inject"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                HTML Inject
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/vite-plugin-full-reload"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Full Reload
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/postcss-sort-media-queries"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sort Media Queries
-              </a>
-            </li>
-          </ul>
-        </div>
-      </article>
+
       <section class="vite-promo">
-        <div class="container">
-          <div class="vite-promo-thumb">
-            <a
-              class="vite-promo-link"
-              href="https://vitejs.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to Vite official website"
-              title="Vite.js  build tool"
-            >
-              <!-- Path to images as from index.html file -->
-              <img
-                class="pic"
-                src="/goit-js-hw-10/assets/vite-logo-9o_aqrTe.png"
-                alt="Vite logo"
-                width="640"
-                height="640"
-              />
-            </a>
+        <article class="badges">
+          <div class="container">
+            <ul class="badges-list">
+              <li class="badges-item">
+                <a
+                  class="badges-link"
+                  href="https://flatpickr.js.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  flatpickr
+                </a>
+              </li>
+              <li class="badges-item">
+                <a
+                  class="badges-link"
+                  href="https://marcelodolza.github.io/iziToast/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  iziToast
+                </a>
+              </li>
+              <li class="badges-item">
+                <a
+                  class="badges-link"
+                  href="https://www.npmjs.com/package/vite-plugin-html-inject"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  HTML Inject
+                </a>
+              </li>
+              <li class="badges-item">
+                <a
+                  class="badges-link"
+                  href="https://www.npmjs.com/package/vite-plugin-full-reload"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Full Reload
+                </a>
+              </li>
+              <li class="badges-item">
+                <a
+                  class="badges-link"
+                  href="https://www.npmjs.com/package/postcss-sort-media-queries"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Sort Media Queries
+                </a>
+              </li>
+            </ul>
           </div>
-          <h2 class="main-title">
-            <span class="main-title-gradient">Vite</span>
-            Template by
-            <a
-              class="main-title-link"
-              href="https://github.com/goitacademy/vanilla-app-template"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GoIT
-            </a>
-          </h2>
-        </div>
+        </article>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <p class="footer-desc">
-          Made with ✨ by
+          Made with
+          <a
+            class="footer-link"
+            href="https://github.com/Ded-Goit"
+            target="_blank"
+            rel="noopener noreferrer"
+            >DED and</a
+          >✨ by
           <a
             class="footer-link"
             href="https://goit.global/ua/"
@@ -126,6 +123,5 @@
       </div>
     </footer>
 
-    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
