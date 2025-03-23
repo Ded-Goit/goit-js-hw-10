@@ -22,10 +22,11 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: 200ms ease-in;
+  color: #888888;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #888;
+  color: #bd34fe;
 }
 .nav-link::after {
   content: '';
@@ -40,5 +41,5 @@
   animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
 }
 .nav-link.active::after {
-  background: #888;
+  background: #bd34fe;
 }
