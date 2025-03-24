@@ -31,14 +31,6 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
-.main-title-gradient-grey {
-  display: block;
-  font-size: 3em;
-  background-image: linear-gradient(120deg, #3f3f3f 30%, #c0c0c0);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
 @media only screen and (min-width: 768px) {
   .main-title-gradient {
     font-size: 3em;

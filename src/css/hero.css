@@ -1,0 +1,25 @@
+.hero-page {
+  overflow: hidden;
+  background-color: black;
+}
+.pixel {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  /*background-color: rgb(46, 158, 6);*/
+  opacity: 0.8;
+}
+.nlh {
+  color: #888888;
+}
+.nlh:hover,
+.nlh:focus {
+  color: #bd34fe;
+}
+.nlh.active::after {
+  background: #bd34fe;
+}
+.main-title-gradient.grey {
+  font-size: 3em;
+  background-image: linear-gradient(120deg, #3f3f3f 30%, #c0c0c0);
+}
