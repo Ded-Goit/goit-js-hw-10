@@ -8,7 +8,7 @@
   background: #e8e8e8;
   background: radial-gradient(circle, #e8e8e8 36%, #b2b2b2);
 }
-input {
+.input-timer {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -21,13 +21,13 @@ input {
   border: 1px solid #808080;
   padding-left: 16px;
 }
-input:disabled {
+.input-timer:disabled {
   color: #808080;
 }
-input:hover {
+.input-timer:hover {
   border-color: #000;
 }
-input:active {
+.input-timer:active {
   color: #000;
   border-color: #4e75ff;
 }
