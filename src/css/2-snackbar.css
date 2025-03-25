@@ -1,0 +1,42 @@
+.snackbar {
+  margin-top: 24px;
+  max-width: 400px;
+  padding: 16px 8px;
+  border: 1px #ababab solid;
+  box-shadow: 2px 2px 8px rgb(59, 59, 59);
+  border-radius: 10px;
+  background: #e8e8e8;
+  background: radial-gradient(circle, #e8e8e8 36%, #b2b2b2);
+}
+
+.form {
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.form fieldset {
+  border-radius: 4px;
+}
+.form fieldset legend {
+  text-align: left;
+}
+.form button {
+  margin-top: 24px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+}
+.form button:hover {
+  background: #6c8cff;
+}
+.iziToast-wrapper {
+  top: 0;
+}

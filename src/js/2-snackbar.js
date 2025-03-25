@@ -2,12 +2,13 @@
 import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
+//Отримуємо дані з форми
 const form = document.querySelector('.form');
 form.addEventListener('submit', event => {
   event.preventDefault();
   const delay = parseInt(form.elements.delay.value);
   const state = form.elements.state.value;
-  //
+  // Створюємо проміс
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (state === 'fulfilled') {
@@ -17,7 +18,7 @@ form.addEventListener('submit', event => {
       }
     }, delay);
   });
-  //
+  //Обробляємо результат промісу
   promise
     .then(delay => {
       iziToast.success({

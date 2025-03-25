@@ -1,1 +1,124 @@
+.content {
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 16px 8px;
+  border: 1px #ababab solid;
+  box-shadow: 2px 2px 8px rgb(59, 59, 59);
+  border-radius: 8px;
+  background: #e8e8e8;
+  background: radial-gradient(circle, #e8e8e8 36%, #b2b2b2);
+}
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-radius: 4px;
+  width: 266px;
+  height: 36px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+}
+input:disabled {
+  color: #808080;
+}
+input:hover {
+  border-color: #000;
+}
+input:active {
+  color: #000;
+  border-color: #4e75ff;
+}
+.button-timer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  width: 75px;
+  height: 40px;
+  background: #cfcfcf;
+  color: #989898;
+  text-align: center;
+}
+.button-timer:active {
+  background: #4e75ff;
+  color: #fff;
+}
+.button-timer:hover {
+  background: #6c8cff;
+  color: #fff;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  min-width: 56px;
+}
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
 
+/*.button-timer {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-timer:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 60px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+*/
