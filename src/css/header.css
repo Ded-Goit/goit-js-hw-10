@@ -10,6 +10,9 @@
   align-items: center;
   justify-content: center;
 }
+.nav-logo:hover {
+  background: antiquewhite;
+}
 .nav-list {
   display: flex;
   align-items: center;

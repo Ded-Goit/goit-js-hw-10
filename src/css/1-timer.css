@@ -79,46 +79,7 @@
   color: #2e2f42;
 }
 
-/*.button-timer {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button-timer:disabled {
+/*.button-timer:disabled {
   background-color: #ccc;
   cursor: not-allowed;
-}
-
-.timer {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.field {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #007bff;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  min-width: 60px;
-}
-
-.value {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.label {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-*/
+}*/

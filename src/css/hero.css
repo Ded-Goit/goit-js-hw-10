@@ -17,7 +17,7 @@
   color: #bd34fe;
 }
 .nlh.active::after {
-  background: #bd34fe;
+  background-color: #bd34fe;
 }
 .main-title-gradient.grey {
   font-size: 3em;

@@ -12,8 +12,7 @@
 .form {
   margin-top: 40px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
@@ -23,6 +22,18 @@
 }
 .form fieldset legend {
   text-align: left;
+}
+.label-snackbar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  margin: 0 auto;
+}
+.input-snackbar {
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 16px;
 }
 .form button {
   margin-top: 24px;

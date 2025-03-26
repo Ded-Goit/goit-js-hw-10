@@ -1,19 +1,19 @@
-// Описаний в документації імпорт бібліотеки
+// Library import described in the documentation
 import iziToast from 'izitoast';
-// Додатковий імпорт стилів
+// Additional style import
 import 'izitoast/dist/css/iziToast.min.css';
-//Отримуємо дані з форми
-const form = document.querySelector('.form'); //Находим HTML-элемент формы и сохраняем его в переменной form.
-//Добавляем обработчик события submit на форму.
+//Get data from the form
+const form = document.querySelector('.form'); //Find the HTML element of the form and store it in the form variable.
+//Add a submit event handler to the form.
 form.addEventListener('submit', event => {
-  event.preventDefault(); //отменяем стандартное поведение формы (перезагрузку страницы).
-  const delay = parseInt(form.elements.delay.value); //получаем значение из поля ввода с именем delay, преобразуя в целое число
-  const state = form.elements.state.value; //получаем значение из выпадающего списка state, которое может быть fulfilled (успех) или rejected (ошибка).
-  // Створюємо проміс
-  /**setTimeout откладывает выполнение на указанное время delay.
-   * В зависимости от значения state:
-   * Если fulfilled, вызывается resolve(delay), что означает успешное выполнение промиса.
-   * Если rejected, вызывается reject(delay), что означает ошибку. */
+  event.preventDefault(); //we cancel the standard behavior of the form (reloading the page).
+  const delay = parseInt(form.elements.delay.value); //we get the value from the input field with the name delay, converting it to an integer
+  const state = form.elements.state.value; //we get the value from the state drop-down list, which can be fulfilled (success) or rejected (error).
+  // Create a trade
+  /**setTimeout delays execution for the specified delay time.
+   * Depending on the value of state:
+   * If fulfilled, resolve(delay) is called, which means successful fulfillment of the promise.
+   * If rejected, reject(delay) is called, which means an error */
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (state === 'fulfilled') {
@@ -23,11 +23,11 @@ form.addEventListener('submit', event => {
       }
     }, delay);
   });
-  //Обробляємо результат промісу
-  /**Если промис успешно выполнился (resolve), то вызывается .then().
-   * Внутри then() используется iziToast.success(),
-   * который показывает всплывающее уведомление с зеленым цветом и сообщением о том,
-   *  что промис выполнен за delay миллисекунд. */
+  //Process the result of the promise
+  /**If the promise is resolved, then .then() is called.
+   * Inside then(), iziToast.success() is used,
+   * which shows a green pop-up notification with a message that
+   *  the promise was fulfilled in delay milliseconds. */
   promise
     .then(delay => {
       iziToast.success({
@@ -35,15 +35,15 @@ form.addEventListener('submit', event => {
         message: `✅ Fulfilled promise in ${delay}ms`,
       });
     })
-    /**Если промис завершился с ошибкой (reject), вызывается .catch().
-     * Внутри catch() используется iziToast.error(),
-     * который показывает всплывающее уведомление с красным цветом и текстом о том,
-     * что промис отклонен через delay миллисекунд. */
+    /**If the promise is rejected, .catch() is called.
+     * Inside catch(), iziToast.error() is used,
+     * which shows a red pop-up notification with a message that
+     * the promise was rejected in delay milliseconds. */
     .catch(delay => {
       iziToast.error({
         title: 'Error',
         message: `❌ Rejected promise in ${delay}ms`,
       });
     });
-  form.reset(); //очищаем все поля формы после отправки.
+  form.reset(); //clear all form fields after submission.
 });
